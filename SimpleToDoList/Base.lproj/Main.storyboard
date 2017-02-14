@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="ipad9_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -19,11 +19,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Shopping List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="43" translatesAutoresizingMaskIntoConstraints="NO" id="XEM-zf-g1W">
-                                <rect key="frame" x="314" y="20" width="141" height="21"/>
+                                <rect key="frame" x="89.5" y="20" width="141" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="141" id="YqN-2g-IFi"/>
                                 </constraints>
@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9bG-UB-ala">
-                                <rect key="frame" x="367" y="49" width="53" height="26"/>
+                                <rect key="frame" x="142.5" y="49" width="53" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="53" id="HWc-gr-RpQ"/>
                                 </constraints>
@@ -40,12 +40,15 @@
                                 <state key="normal" title="New Item"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hy-nU-T7S">
-                                <rect key="frame" x="313" y="49" width="46" height="26"/>
+                                <rect key="frame" x="88.5" y="49" width="46" height="26"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="New List"/>
+                                <connections>
+                                    <action selector="newList:" destination="BYZ-38-t0r" eventType="touchUpInside" id="S87-CH-gE8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dR2-3u-KDW">
-                                <rect key="frame" x="428" y="48" width="22" height="26"/>
+                                <rect key="frame" x="203.5" y="48" width="22" height="26"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="L7c-3c-Lqy"/>
                                 </constraints>
@@ -53,31 +56,31 @@
                                 <state key="normal" title="Add"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbt-Xt-wzf">
-                                <rect key="frame" x="24" y="92" width="93" height="21"/>
+                                <rect key="frame" x="20" y="92" width="93" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ccL-mx-EmO">
-                                <rect key="frame" x="125" y="87" width="623" height="30"/>
+                                <rect key="frame" x="121" y="87" width="183" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olt-Ym-6Iz">
-                                <rect key="frame" x="24" y="130" width="70" height="21"/>
+                                <rect key="frame" x="20" y="130" width="70" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z8a-Eu-Tbc">
-                                <rect key="frame" x="125" y="125" width="623" height="30"/>
+                                <rect key="frame" x="121" y="125" width="183" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfx-Fv-M9V">
-                                <rect key="frame" x="24" y="170" width="59.5" height="21"/>
+                                <rect key="frame" x="20" y="170" width="59.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -111,6 +114,11 @@
                             <constraint firstItem="z8a-Eu-Tbc" firstAttribute="trailing" secondItem="ccL-mx-EmO" secondAttribute="trailing" id="xpH-vb-sA8"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="addItem" destination="dR2-3u-KDW" id="pcz-m7-Tzz"/>
+                        <outlet property="newItem" destination="9bG-UB-ala" id="Gdo-iu-9mt"/>
+                        <outlet property="newList" destination="7hy-nU-T7S" id="Uh6-EL-hO3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
