@@ -13,9 +13,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var newItem: UIButton!
     @IBOutlet weak var addItem: UIButton!
     
+    @IBOutlet weak var descriptionTextField: UITextField!
+    @IBOutlet weak var quantityTextField: UITextField!
     
     @IBAction func newList(_ sender: UIButton) {
-        
+        newItem.isEnabled = true
+        addItem.isEnabled = true
+        descriptionTextField.isEnabled = true
+        quantityTextField.isEnabled = true
     }
     
     override func viewDidLoad() {
