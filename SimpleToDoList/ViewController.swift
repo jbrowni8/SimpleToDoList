@@ -29,7 +29,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func buttonClick(sender: UIButton) {
-        
         let alertController = UIAlertController(title: "Error", message: "Insert an integer value in the quantity text field.", preferredStyle: .alert)
         let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
         alertController.addAction(defaultAction)
