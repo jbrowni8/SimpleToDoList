@@ -38,6 +38,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="11"/>
                                 <state key="normal" title="New Item"/>
+                                <connections>
+                                    <action selector="addNewItem:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R5h-bU-ZJE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7hy-nU-T7S">
                                 <rect key="frame" x="135.66666666666666" y="49" width="46" height="26"/>
@@ -54,6 +57,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Add"/>
+                                <connections>
+                                    <action selector="addButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VFZ-xN-zOS"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mbt-Xt-wzf">
                                 <rect key="frame" x="24" y="92" width="93" height="21"/>
@@ -65,7 +71,10 @@
                                 <rect key="frame" x="125" y="87" width="269" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go"/>
+                                <connections>
+                                    <action selector="descExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="cQC-v3-zWJ"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Olt-Ym-6Iz">
                                 <rect key="frame" x="24" y="130" width="70" height="21"/>
@@ -77,9 +86,12 @@
                                 <rect key="frame" x="125" y="125" width="269" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="quanExit:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="2Lo-wG-GM2"/>
+                                </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfx-Fv-M9V">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No item" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="40" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hfx-Fv-M9V">
                                 <rect key="frame" x="24" y="170" width="59.666666666666671" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -116,7 +128,8 @@
                     </view>
                     <connections>
                         <outlet property="addItem" destination="dR2-3u-KDW" id="pcz-m7-Tzz"/>
-                        <outlet property="descriptionTextField" destination="ccL-mx-EmO" id="DMh-pH-PF6"/>
+                        <outlet property="descriptionTextField" destination="ccL-mx-EmO" id="U5A-gb-Gw1"/>
+                        <outlet property="list" destination="Hfx-Fv-M9V" id="LTC-LP-XnD"/>
                         <outlet property="newItem" destination="9bG-UB-ala" id="Gdo-iu-9mt"/>
                         <outlet property="quantityTextField" destination="z8a-Eu-Tbc" id="mf2-yg-fKj"/>
                     </connections>
