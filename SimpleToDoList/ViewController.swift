@@ -31,11 +31,8 @@ class ViewController: UIViewController {
     @IBAction func buttonClick(sender: UIButton) {
         
         let alertController = UIAlertController(title: "Error", message: "Insert an integer value in the quantity text field.", preferredStyle: .alert)
-        
         let defaultAction = UIAlertAction(title: "Close Alert", style: .default, handler: nil)
-        
         alertController.addAction(defaultAction)
-        
         present(alertController, animated: true, completion: nil)
     }
     
@@ -85,7 +82,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 
